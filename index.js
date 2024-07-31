@@ -24,6 +24,7 @@ app.use('/api-docs', SwaggerUi.serve, SwaggerUi.setup(specs));
 
 app.use('/health', healthRoute);
 
+
 app.get('/', (req, res, next) => {
     res.send(response(status.SUCCESS, "루트 페이지!"));
 })
